@@ -43,7 +43,8 @@ module.exports = function (config) {
     // optionally, configure the reporter
     coverageReporter: {
       type : 'lcov',
-      dir : 'coverage/'
+      dir : 'coverage/',
+      subdir: '.' 
     },
     reporters: ['progress', 'kjhtml' ,'sonarqubeUnit','coverage'],
     port: 9876,
